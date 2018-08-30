@@ -19,9 +19,6 @@
 			font-size:2em;
 			text-decoration: none;
 		}
-		img{
-
-		}
 	</style>
 </head>
 <body>
@@ -29,23 +26,10 @@
 		<h1>Webbutveckling 2</h1>
 		<article>
 			<a href="expectations.html" target="_blank">Förväntningar</a><br>
-			<a href="goals.html" target="_blank">Mina Mål</a>
+			<a href="goals.html" target="_blank">Mina Mål</a><br>
 		</article>
-		<button id="pict">Bilden</button>
-		<img id="skiss" src="skiss.img" alt="Rip">
+		<img id="skiss" src="skiss.jpg" alt="Rip">
+		
 	</main>
-	<script>
-		var picButton = document.getElementById("pict");
-		var image = document.getElementById("skiss");
-
-		picButton.addEventListener(click, function(){
-			if(image.style.display == "none"){
-				image.style.display = "inline";
-			}
-			if(image.style.display == "inline"){
-				image.style.display = "none";
-			}
-		}, true);
-	</script>
 </body>
 </html>
