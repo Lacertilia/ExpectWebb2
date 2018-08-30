@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Webbutveckling 2</title>
+	<style>
+		body{
+			text-align: center;
+			background-color: cyan;
+		}
+		h1{
+
+			font-size:5em;
+		}
+		article{
+			
+		}
+		a{
+			font-size:2em;
+			text-decoration: none;
+		}
+		img{
+
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<h1>Webbutveckling 2</h1>
+		<article>
+			<a href="expectations.html" target="_blank">Förväntningar</a><br>
+			<a href="goals.html" target="_blank">Mina Mål</a>
+		</article>
+		<button id="pict">Bilden</button>
+		<img id="skiss" src="skiss.img" alt="Rip">
+	</main>
+	<script>
+		var picButton = document.getElementById("pict");
+		var image = document.getElementById("skiss");
+
+		picButton.addEventListener(click, function(){
+			if(image.style.display == "none"){
+				image.style.display = "inline";
+			}
+			if(image.style.display == "inline"){
+				image.style.display = "none";
+			}
+		}, true);
+	</script>
+</body>
+</html>
